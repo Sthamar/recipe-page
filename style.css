@@ -1,0 +1,263 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+
+    --Stone-100: hsl(30, 54%, 90%);
+    --Stone-150: hsl(30, 18%, 87%);
+    --Stone-600: hsl(30, 10%, 34%);
+    --Stone-900: hsl(24, 5%, 18%);
+
+    --Brown-800: hsl(14, 45%, 36%);
+
+    --Rose-800: hsl(332, 51%, 32%);
+    --Rose-50: hsl(330, 100%, 98%);
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: 'youngFont';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitBlack';
+    src: url('/assets/fonts/outfit/static/Outfit-Black.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitBold';
+    src: url('/assets/fonts/outfit/static/Outfit-Bold.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitExtraBold';
+    src: url('/assets/fonts/outfit/static/Outfit-ExtraBold.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitExtraLight';
+    src: url('/assets/fonts/outfit/static/Outfit-ExtraLight.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitRegular';
+    src: url('/assets/fonts/outfit/static/Outfit-Regular.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitLight';
+    src: url('/assets/fonts/outfit/static/Outfit-Light.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitMedium';
+    src: url('/assets/fonts/outfit/static/Outfit-Medium.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitThin';
+    src: url('/assets/fonts/outfit/static/Outfit-Thin.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'outfitSemiBold';
+    src: url('/assets/fonts/outfit/static/Outfit-SemiBold.ttf')format('truetype');
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* font test */
+.regular{
+    font-family: 'outfitRegular';
+}
+.light{
+    font-family: 'outfitLight';
+}
+.extralight{
+    font-family: 'outfitExtraLight';
+}
+.bold{
+    font-family: 'outfitBold';
+}
+.extrabold{
+    font-family: 'outfitExtraBold';
+}
+.medium{
+    font-family: 'outfitMedium';
+}
+.semibold{
+    font-family: 'outfitSemiBold';
+}
+.thin{
+    font-family:'outfitThin';
+}
+.black{
+    font-family: 'outfitBlack';
+}
+
+body{
+    background-color: var(--Stone-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: 30rem;
+    padding: 20px;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+.card img{
+    border-radius: 1rem;
+}
+
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+
+.title{
+    font-family: 'youngFont';
+    font-weight: 400;
+}
+.description{
+    font-family:'outfitRegular' ;
+    font-size: 12px;
+    color: var(--Stone-600);
+}
+
+.info{
+    background-color: var(--Rose-50);
+    padding: 20px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.info-title{
+    font-family: 'outfitSemiBold';
+    font-size: 16px;
+    color: var(--Rose-800);
+}
+
+.info ul{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-position: inside;
+    padding-left: 10px;
+    text-indent: 10px;
+}
+
+.info-items{
+    font-family: 'outfitLight';
+    color: var(--Stone-600);
+}
+
+.info-items span{
+    font-family: 'outfitSemiBold';
+    color: var(--Stone-900);
+}
+
+.info-items::marker{
+    color: var(--Rose-800);
+    font-size: 10px;
+}
+
+.sub-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: .5rem;
+}
+
+.sub-title{
+    font-family: 'youngFont';
+    font-weight: 400;
+    color: var(--Brown-800);
+    
+}
+
+.sub-section ul, .sub-section ol{
+    list-style-position: inside;
+    padding-left: 10px;
+    text-indent: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: .5rem;
+}
+
+.ingredient-items{
+    font-family: 'outfitRegular';
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--Stone-600);
+}
+
+.ingredient-items::marker{
+    font-size: 10px;
+    color: var(--Brown-800);
+}
+.divider{
+    color: var(--Stone-600);
+}
+
+
+.instruction-items::marker{
+    font-family: 'outfitBold';
+    font-size: 12px;
+    color: var(--Brown-800);
+}
+
+.instruction-items{
+    font-family: 'outfitRegular';
+    font-size: 12px;
+    color: var(--Stone-600);
+}
+
+.instruction-items span{
+    font-family: 'outfitBold';
+    font-size: 12px;
+    color: var(--Stone-600);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.minirals {
+    font-family:'outfitRegular' ;
+    color: var(--Stone-600);
+}
+
+.amount {
+    font-family: 'outfitBold';
+    color: var(--Brown-800);
+    /* text-align: right; */
+}
